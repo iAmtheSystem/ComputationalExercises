@@ -1,0 +1,13 @@
+set xrange [-100:100]
+set yrange [*:*]
+b = 62
+lambda = 0.0708077
+a = 272
+k = pi * 2 / lambda
+
+h(x) = (sin(k/2*b*sin(x))/ (k/2*b*sin(x)) )**2
+i(x) = (cos(k/2*a*sin(x)))**2
+g(x) =  h(x)*i(x) 
+
+
+plot g(x)
